@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html   xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+
+  
+  <div class="col-md-3">
+      <div class="panel panel-default">
+      <div class="panel-heading">Liste des Cinémas</div>
+      <div class="panel-body">
+      
+     
+        
+    <table class="table">
+   
+<tr th:each="p:${cinemas}">
+
+<td th:text="${p.name}"></td>	
+
+
+  </tr>
+  
+  
+   
+  </table>
+  
+  
+  
+  </div>
+  </div>
+    </div>
+  
+    
+    
+</body>
+</html>

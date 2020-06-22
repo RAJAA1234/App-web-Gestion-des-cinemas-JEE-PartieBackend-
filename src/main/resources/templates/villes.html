@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html   xmlns:th="http ://www.thymeleaf.org"
+ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+     layout:decorator="Template1">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+  <div layout:fragment="pageContent1">
+  
+ 
+   <div class="container-3">
+     <div class="card">
+  <div class="row">
+    <div class="col-md-3">
+   
+      <div class="card-header">liste des villes </div>
+        <div class="card-body">
+         <table class="table">
+      
+  
+<tr th:each="p:${villes}">
+
+<td th:text="${p.name}"></td>	
+
+    </tr>
+ </table>
+   </div>
+  </div>
+   </div>
+</div>
+</div>
+</div>   
+
+    
+    
+</body>
+</html>
